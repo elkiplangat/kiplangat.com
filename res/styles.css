@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Roboto+Slab:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    background-color: #001220;
+    background-image: url("img/circles.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    margin-top: 24px;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+
+.logo {
+    font-family: 'Comforter Brush', cursive;
+    font-size: 36px;
+
+}
+
+.logo:hover {
+    color: #A29BFF;
+}
+
+nav ul {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul > li:hover {
+    color: #A29BFF;
+    text-decoration: underline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+}
+
+nav a:hover {
+    color: #A29BFF;
+    font-size: 25px;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -32px;
+}
+
+.sidetext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    max-width: 40%;
+    font-size: 24px;
+}
+
+.sidetext h2 {
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.sideimage img {
+    border-bottom-right-radius: 240px;
+    border-bottom-left-radius: 240px;
+    z-index: -1;
+}
+
+.text a {
+    text-decoration: none;
+    color: #A29BFF;
+
+}
+
+.hire-btn {
+    font-family: 'Roboto Slab', serif;
+    font-size: 48px;
+    font-weight: bold;
+
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    background-color:  #A29BFF;
+    margin-top: 24px;
+    border-radius: 10px;
+
+
+
+}
+.hire-btn:hover{
+    animation: scale-text 1s linear none;
+}
+
+@keyframes scale-text {
+    100% {
+        transform: scale(1.05);
+    }
+
+}
+footer{
+
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.links ul{
+    list-style-type: none;
+    display: flex;
+
+
+}
+.links ul li{
+    margin-right: 25px;
+    color: #ffffff;
+}
+.links a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+}
+.links a:hover{
+    text-decoration: underline;
+
+}
+.text a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 1070px){
+    body{
+        width: 100%;
+    }
+   nav{
+       width: 80%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin: auto auto 32px;
+   }
+    nav ul{
+        width: inherit;
+        justify-content: center;
+
+    }
+    nav ul li{
+        margin: 0;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 60%;
+    }
+    .sidetext{
+        max-width: 80%;
+    }
+    .text h2{
+        font-size: 32px;
+    }
+    .text p{
+        font-size: 16px;
+    }
+    .hire-btn{
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    footer{
+
+    }
+    .links ul{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .links ul li{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+.sideimage img{
+    width: 350px;
+}
+}
+
