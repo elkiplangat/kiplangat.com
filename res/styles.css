@@ -69,7 +69,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: -32px;
+
 }
 
 .sidetext {
@@ -127,13 +127,13 @@ main {
 
 }
 footer{
-
+display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .links{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+
 
 }
 .links ul{
@@ -187,6 +187,7 @@ footer{
         max-width: 80%;
     }
     .text h2{
+        text-align: center;
         font-size: 32px;
     }
     .text p{
@@ -199,13 +200,20 @@ footer{
     footer{
 
     }
-    .links ul{
+    .links{
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .links ul{
+
+        flex-direction: row;
+        justify-content: space-between;
         text-align: center;
+        align-items: center;
     }
     .links ul li{
-        margin-right: 0;
+
         margin-bottom: 10px;
     }
 .sideimage img{
