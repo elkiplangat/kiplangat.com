@@ -196,6 +196,9 @@ display: flex;
     .hire-btn{
         font-size: 32px;
         margin-bottom: 24px;
+        max-width: 450px;
+        align-self: center;
+        width: 100%;
     }
     footer{
 
